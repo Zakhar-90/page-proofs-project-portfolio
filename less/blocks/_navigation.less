@@ -1,0 +1,139 @@
+.navigation {
+    height: 185px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        padding: 0 30px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0 100px;
+    }
+}
+
+.navigation__logo {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 700;
+
+    z-index: 2;
+}
+
+.logo__link {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #000000;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -3px;
+        width: calc(100% + 10px);
+        background-color: #fbdc4d;
+        height: 10px;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}
+
+.navigation__menu {
+    display: none;
+    position: relative;
+
+    z-index: 2;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.menu__link {
+    position: relative;
+    display: inline-block;
+    margin-right: 80px;
+
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -4px;
+        width: calc(100% + 10px);
+        background-color: #fbdc4d;
+        height: 8px;
+        z-index: -1;
+    }
+}
+
+.navigation__social {
+    display: none;
+    position: relative;
+
+    z-index: 2;
+
+    @media (min-width: 1200px) {
+        width: 130px;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+        display: block;
+    }
+}
+
+.social__link {
+    position: relative;
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -3px;
+        width: calc(100% + 20px);
+        background-color: #fbdc4d;
+        height: 8px;
+        z-index: -1;
+    }
+}
+
+.navigation__button {
+    position: relative;
+    padding: 0;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 25px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 5px;
+        background-color: #000000;
+        box-shadow: 0 10px 0 0 #000000, 0 20px 0 0 #000000;
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}

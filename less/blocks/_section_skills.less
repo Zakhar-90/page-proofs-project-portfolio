@@ -1,0 +1,130 @@
+.section-skills__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+}
+
+.section-skills__my-skill {
+    max-width: 290px;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        max-width: 340px;
+        margin-bottom: 0px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 650px;
+    }
+}
+
+.section-skills__heading {
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: 32px;
+        margin-bottom: 42px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 40px;
+    }
+}
+
+.section-skills__list {
+    margin: 0;
+    margin-bottom: 42px;
+    padding: 0;
+    padding-left: 5px;
+    list-style-type: none;
+    font-size: 24px;
+    line-height: 1.2;
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+
+        li::before {
+            content: "—";
+            padding-right: 10px;
+        }
+    }
+}
+
+.none {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: inline-block;
+    }
+}
+
+.social-icons-wrapper {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+
+.social-icons__link {
+    display: inline-block;
+    margin-right: 25px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-right: 30px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 25px;
+    }
+}
+
+.mail-link {
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.2;
+
+    transition: all 0.5s;
+
+    &:hover {
+        color: #fbdc4d;
+        border-bottom: 1px solid #fbdc4d;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
